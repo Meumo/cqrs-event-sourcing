@@ -1,0 +1,14 @@
+package sn.meum.digitalbanking.query.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class AccountHistoryDTO {
+    private AccountDTO accountDTO;
+    private List<AccountOperationDTO> operations;
+}
